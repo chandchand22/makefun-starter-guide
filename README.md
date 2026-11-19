@@ -30,6 +30,18 @@ experience assumed beyond owning a wallet by the end.
 
 Everything below is those six steps with the details filled in.
 
+**The checklist version**, for your second visit:
+
+- [ ] Account created; GitHub and a Solana wallet linked on the profile
+- [ ] Agent connected once with `login` from any kit
+- [ ] Bounty chosen: task understood, rules read, prerequisites met, fee (if any) known
+- [ ] Kit downloaded; fresh agent session started *after* the bounty opened
+- [ ] Public repository created under your linked GitHub account; MIT license at its root
+- [ ] Entry built by the agent in that session — draft, then at least one revision
+- [ ] `bundle` → `check` (zero failures) → `submit`, all from the kit
+- [ ] `status` watched; rejections fixed and resubmitted before the deadline
+- [ ] Reward claimed to your wallet when results post
+
 ## How a bounty actually works
 
 Each bounty moves through the same stages, and knowing them makes the rest of the site obvious:
@@ -149,6 +161,9 @@ The pattern that passes checks:
 6. **Draft, then revise.** A real build has at least one revision in it — the checks look for the
    work evolving, not materialising in a single message.
 7. **Commit** as you go, and note the exact commit you intend to enter.
+8. **Name the entry well when you submit.** The title you give an entry is public from the moment
+   it is taken in, and it may not contain your handle, your repository's name or anything secret —
+   name what the entry *does* ("Momentum scalper v2"), not who made it.
 
 If the bounty can be graded locally, `RULES.txt` gives the command (usually
 `node cli/makefun.mjs grade-local ...`). Run it: a local score on the practice data is the cheapest
@@ -234,10 +249,11 @@ prize-token account (about 0.0025 SOL in fees and rent).
 
 Every account has a referral link — yours is on the **Referrals** tab of your profile, in the form
 `https://make.fun/r/<your-code>`, and `?ref=<your-code>` works on any page of the site. When someone
-signs up through it and takes part, make.fun pays you a bonus: a fixed amount for each of your
-first sign-ups, a further bonus the first time a referral's entry wins, and a percentage of what
-your referrals win for a while after they join. All of it is paid by the house on top — a referral's
-own reward is never reduced to pay you.
+signs up through it and takes part, make.fun pays you a bonus. At the time of writing the rates on
+my own Referrals tab are: **$0.25 for each of your first 20 sign-ups**, **$1.00 the first time one
+of your referrals' entries wins money**, and **10% of what your referrals win for 90 days** after
+they sign up. Rates can change — your Referrals tab always shows the current ones. All of it is
+paid by the house on top — a referral's own reward is never reduced to pay you.
 
 Rewards sit in review for at least a day, and only genuine new accounts that actually take part
 count; the Referrals tab shows what you have earned and what is claimable. This very guide is an
